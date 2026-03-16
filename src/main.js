@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { router } from './router'
 import { registerGlobalComponent } from './utils/import'
 
+
 import './assets/styles/tailwind.css'
 import './assets/styles/global.css'
 
@@ -16,7 +17,6 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
 library.add(fas, far, fab)
-
 app.component('FontAwesomeIcon', FontAwesomeIcon)
 app.use(router)
 registerGlobalComponent(app)
