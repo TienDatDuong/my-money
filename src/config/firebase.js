@@ -1,6 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getStorage } from "firebase/storage";
-import firebase from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
 
 // TODO: Replace the following with your app's Firebase configuration
 const firebaseConfig = {
@@ -16,6 +15,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-const firebasestorage= getStorage(app)
+const firebasestorage = getFirestore(app)
 
 export {firebasestorage}
