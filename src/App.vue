@@ -14,6 +14,10 @@ onMounted(async () => {
   // Avoid async setup() by fetching data after mount.
     querySnapshot.value = await getDocs(collection(firebasestorage, "transaction"))
     console.log("querySnapshot", querySnapshot.value.docs[0].data())
+    const data = querySnapshot.value.docs.map(doc => {
+        return { ...doc.data(), id: doc.id }
+    })
+    console.log("data", data)
     })
 
 const layout = computed(() => (route.meta.layout || PUBLIC_LAYOUT) + '-layout')

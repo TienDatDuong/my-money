@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+import { getAuth, connectAuthEmulator } from "firebase/auth";
 
 // TODO: Replace the following with your app's Firebase configuration
 const firebaseConfig = {
@@ -16,5 +17,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const firebasestorage = getFirestore(app)
+const firebaseauth = getAuth(app);
+//const timestamp = getFirestore(app).FieldValue.serverTimestamp
 
-export {firebasestorage}
+export { firebasestorage, firebaseauth }
