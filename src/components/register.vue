@@ -37,6 +37,7 @@
 <script setup>
     import {reactive, ref} from "vue"
     import { formatDate } from "../utils/time";
+    import signUp from "../composables/useSignUp";
 
     const dataUser = reactive({
         fullName: "",
@@ -45,10 +46,19 @@
         time: formatDate(new Date())
     })
 
-    const onSubmit = (event) => {
+    const onSubmit = async (event) => {
         event.preventDefault();
         console.log("dataUser", dataUser)
-        // Handle registration logic here
+        const result = await signUp(dataUser.email, dataUser.password);
+        
+        if (result.success) {
+            console.log("Registration successful", result.data);
+            // Redirect to dashboard or login page
+            // await router.push('/login');
+        } else {
+            console.error("Registration failed:", result.error);
+            alert(result.error);
+        }
     };
 
 </script>

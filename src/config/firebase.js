@@ -17,7 +17,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const firebasestorage = getFirestore(app)
-const firebaseauth = getAuth(app);
+const firebaseAuth = getAuth(app);
 //const timestamp = getFirestore(app).FieldValue.serverTimestamp
 
-export { firebasestorage, firebaseauth }
+export { firebasestorage, firebaseAuth }
