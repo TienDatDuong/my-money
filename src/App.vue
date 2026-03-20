@@ -13,7 +13,6 @@ const querySnapshot = ref(null)
 onMounted(async () => {
   // Avoid async setup() by fetching data after mount.
     querySnapshot.value = await getDocs(collection(firebasestorage, "transaction"))
-    console.log("querySnapshot", querySnapshot.value.docs[0].data())
     const data = querySnapshot.value.docs.map(doc => {
         return { ...doc.data(), id: doc.id }
     })
