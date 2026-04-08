@@ -59,7 +59,7 @@
             // You can also reset the form here if needed
             dataUser.email = "";
             dataUser.password = "";
-            router.push({name: 'home'}); // Redirect to home page after successful sign-in
+            router.push({name: 'profile'}); // Redirect to profile page after successful sign-in
         }
     };
 
