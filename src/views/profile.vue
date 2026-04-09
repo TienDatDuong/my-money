@@ -18,8 +18,8 @@ import { PROFILE_OPTIONS } from "../constants";
                     <div class="w-24 h-24 rounded-full overflow-hidden mx-auto">
                         <img src="../assets/images/IMG_3259.JPG" alt="Logo" class="w-full h-full object-cover">
                         </div>
-                        <div class="text-bold text-2xl text-primary mt-3 text-blue-500">{{ user.displayName }}</div>
-                    <div class="font-semibold text-gray-400 mt-1">{{ user.email }}</div>
+                        <div class="text-bold text-2xl text-primary mt-3 text-blue-500">{{ user?.displayName }}</div>
+                    <div class="font-semibold text-gray-400 mt-1">{{ user?.email }}</div>
                 </div>
             </div>
         </div>
