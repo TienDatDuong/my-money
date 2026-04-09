@@ -30,7 +30,7 @@
             <div class="w-full text-center mt-6">
                 <span class="font-semibold" >I'm already a member</span>
                 <span class="ml-4 text--primary">
-                    <router-link to="/login">Sign Up</router-link>
+                    <router-link to="/register">Sign Up</router-link>
                 </span>
             </div>
         </div>

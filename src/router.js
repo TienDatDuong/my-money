@@ -8,7 +8,8 @@ const routes = [
     { path: '/wallet', name: 'wallet', component: () => import('./views/myWallet.vue') },
     { path: '/tools', name: 'tools', component: () => import('./views/tools.vue') },
     { path: '/privacy', name: 'privacy', component: () => import('./views/privacy.vue') },
-    { path: '/about', name: 'about', component: () => import('./views/about.vue') }
+    { path: '/about', name: 'about', component: () => import('./views/about.vue') },
+    {path: '/logout', name: 'logout', component: () => import('./views/logout.vue') }
 
 ]
 
