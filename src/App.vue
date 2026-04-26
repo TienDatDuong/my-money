@@ -20,6 +20,7 @@ onMounted(async () => {
     })
 
 const layout = computed(() => (route.meta.layout || PUBLIC_LAYOUT) + '-layout')
+console.log("Layout:", layout.value)
 </script>
 
 <template>

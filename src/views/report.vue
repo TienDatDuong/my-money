@@ -1,0 +1,3 @@
+<template>
+    Report page
+</template>

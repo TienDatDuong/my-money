@@ -41,3 +41,37 @@ export const PROFILE_OPTIONS = [
         }
     }
 ]
+export const MENU_BOTTOM = [
+    {
+        name: "home",
+        icon: "fa-solid fa-grip",
+        route: {
+            name: "home",
+            param: "/home"
+        }
+    },
+    {
+        name: "reports",
+        icon: "fa-solid fa-chart-simple",
+        route: {
+            name: "report",
+            param: "/report"
+        }
+    },
+    {
+        name: "budget",
+        icon: "fa-solid fa-wallet",
+        route: {
+            name: "budget",
+            param: "/budget"
+        }
+    },
+    {
+        name: "profile",
+        icon: "fa-solid fa-user",
+        route: {
+            name: "profile",
+            param: "/profile"
+        }
+    }
+]
