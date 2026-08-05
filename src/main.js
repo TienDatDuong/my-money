@@ -5,12 +5,14 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { router } from './router'
 import { registerGlobalComponent } from './utils/import'
+import Antd from 'ant-design-vue'
 
 
 import './assets/styles/tailwind.css'
 import './assets/styles/global.css'
 
 const app = createApp(App)
+app.use(Antd)
 
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
